@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Site</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- HEADER  -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./images/logo.png" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>
+            Hi, im
+            <span>Dapper-D</span>
+            <br />
+            From Nigeria
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT  -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/user.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              expedita tempore assumenda natus cupiditate autem quod vitae nobis
+              itaque laboriosam, voluptas sint deleniti placeat non nesciunt
+              totam magnam dolorem architecto. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Minus, veritatis.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li>
+                  <span>Web Development</span><br />Designing Web/App interfaces
+                </li>
+                <li><span>App Development</span><br />Building Android/iOS</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - Current</span><br />UI/UX Design Training at ET
+                  Institute
+                </li>
+                <li>
+                  <span>2019 - 2021</span><br />Team Lead at StarLabs LLC.
+                </li>
+                <li>
+                  <span>2017 - 2019</span><br />UI/UX Design Executive at Marval
+                  Digital LTD.
+                </li>
+                <li>
+                  <span>2016 - 2017</span><br />Internship at ekart eCommerce.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2016</span><br />UI/UX Design Training at ET Institute
+                </li>
+                <li><span>2016</span><br />MBA from MIT Bangalore.</li>
+                <li><span>2014</span><br />BBA from MIT Bangalore.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES  -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>Web Design</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
