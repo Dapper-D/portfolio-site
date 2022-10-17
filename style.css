@@ -426,7 +426,7 @@ nav .fa-solid {
     width: 200px;
     height: 100vh;
     padding-top: 50px;
-    z-index: 2;
+    z-index: 3;
   }
 
   nav ul li {
@@ -448,7 +448,7 @@ nav .fa-solid {
   nav .fa-solid.fa-bars {
     position: fixed;
     right: 5%;
-    z-index: 5;
+    z-index: 2;
   }
 
   .about-col-2 .sub-title {
