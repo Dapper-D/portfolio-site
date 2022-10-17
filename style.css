@@ -426,7 +426,7 @@ nav .fa-solid {
     width: 200px;
     height: 100vh;
     padding-top: 50px;
-    z-index: 3;
+    z-index: 99;
   }
 
   nav ul li {
