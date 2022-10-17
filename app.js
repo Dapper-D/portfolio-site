@@ -33,3 +33,24 @@ function closemenu() {
   sideMenu.style.right = "-200px";
   sideMenu.style.transition = ".5s";
 }
+
+// FOR THE WEBAPP TO BE LINKED TO GOOGLE SPREADSHEETS
+
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycby_llpSayfxjjsU_LdrZzDr1laymKyxSKkcJBf9czGkZzpP3zXxwBt3SyOFdhlA_UPwcA/exec";
+const form = document.forms["submit-to-google-sheet"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      msg.innerHTML = "Message sent successfully";
+      setTimeout(() => {
+        msg.innerHTML = "";
+      }, 5000);
+      form.reset();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
+
+const msg = document.getElementById("msg");

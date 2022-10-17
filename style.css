@@ -496,4 +496,14 @@ nav .fa-solid {
     align-items: center;
     justify-content: center;
   }
+
+  #msg {
+    text-align: center;
+  }
+}
+
+#msg {
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
 }
