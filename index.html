@@ -17,14 +17,17 @@
       <div class="container">
         <nav>
           <img src="./images/logo.png" class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul id="sidemenu">
+            <li><a href="#header" onclick="closemenu()">Home</a></li>
+            <li><a href="#about" onclick="closemenu()">About</a></li>
+            <li><a href="#services" onclick="closemenu()">Services</a></li>
+            <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
+
         <div class="header-text">
           <p>Frontend Developer</p>
           <h1>
@@ -116,7 +119,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis, quibusdam.
             </p>
-            <a href="#">.......Learn More</a>
+            <a href="#">Learn More</a>
           </div>
           <div>
             <i class="fa-solid fa-code-compare"></i>
@@ -125,7 +128,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis, quibusdam.
             </p>
-            <a href="#">.......Learn More</a>
+            <a href="#">Learn More</a>
           </div>
           <div>
             <i class="fa-solid fa-train"></i>
@@ -134,7 +137,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis, quibusdam.
             </p>
-            <a href="#">.......Learn More</a>
+            <a href="#">Learn More</a>
           </div>
         </div>
       </div>
@@ -186,9 +189,56 @@
             </div>
           </div>
         </div>
+        <a href="#" class="btn">See More</a>
       </div>
     </div>
 
+    <!-- CONTACT  -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>oladapoomoworare@gmail.com
+            </p>
+            <p><i class="fa-solid fa-mobile-screen"></i> +2348056759178</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <a href="./images/resume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="your name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          copyright &copy; Kevin. Made with <i class="fa-solid fa-heart"></i> by
+          Dapo
+        </p>
+      </div>
+    </div>
     <script src="./app.js"></script>
   </body>
 </html>

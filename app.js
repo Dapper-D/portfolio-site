@@ -20,3 +20,16 @@ function opentab(tabname) {
   document.getElementById(tabname).classList.add("active-tab");
 }
 // END OF ABOUT
+
+// SCRIPT FOR SIDE BAR IN SMALLER SCREENS
+
+var sideMenu = document.getElementById("sidemenu");
+function openmenu() {
+  sideMenu.style.right = "0";
+  sideMenu.style.transition = ".5s";
+}
+
+function closemenu() {
+  sideMenu.style.right = "-200px";
+  sideMenu.style.transition = ".5s";
+}
